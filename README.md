@@ -261,17 +261,17 @@ Report Cell Usage:
 
 Here is the same data visualized into a bar chart.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a28cecc8-6cbe-4cb2-bc3b-71829693742d/b804568a-ec4b-4a25-86e5-2b8e7ef1e39d/image.png)
+![image.png](assets/fpga_primitive_visualization.png)
 
 We see that only 11 `DSP48E1` slices are being used when synthesizing ZynqParrot. We can see in the table below that there are 220 `DSP48E1` slices on the PYNQ Z2’s XCZ7020.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a28cecc8-6cbe-4cb2-bc3b-71829693742d/5108ad25-ace1-4f43-8e6f-5b1dfe683dc5/image.png)
+![image.png](assets/xcz-7020-datasheet.png)
 
 This implies that there is significant opportunity in terms of utilization. And using Lakeroad, we can exploit this opportunity.
 
 Lakeroad takes a design, an architecture description, and a model of an FPGA primitive (such as a DSP48E1). Then, Lakeroad uses program synthesis to compile the design to Verilog after generating a sketch and semantically analyzing the file. This compiled Verilog file can be the optimal mapping for the design. 
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a28cecc8-6cbe-4cb2-bc3b-71829693742d/39d585a6-8374-495f-9714-c1897bb256e3/image.png)
+![image.png](assets/lakeroad_components.png)
 
 I’ll briefly note that what’s “optimal” can vary between design contexts. In the case of ZynqParrot, we are explicitly trying to reduce consumption of LUT primitives and increase consumption of DSP48E1 primitives. But this is not always the case. It could the reverse, or it could even be using Lakeroad to compile a more efficient mapping of BRAM18/36 slices from a design. 
 
@@ -315,7 +315,7 @@ My contributions towards the Churchroad evaluation repo consisted of expanding t
 
 The addition of capability for custom Vivado synthesis flags was because Vivado allows for a significant amount of customization in terms of synthesis, based on specific flags included in the `.tcl` file. For example, some Vivado flags are listed in the screenshot below [2]:
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a28cecc8-6cbe-4cb2-bc3b-71829693742d/d5a6f3db-2f5d-49a4-a9d5-0909daef435b/image.png)
+![image.png](assets/vivado_synthesis_flags.png)
 
 When using the `synth_design` command, these flags can be included with the command in order to change the behavior during synthesis. In the case of our Churchroad evaluation, we discovered that certain flags (such as setting `cascade_dsp force` ) would drastically reduce the number of LUT and carry primitives being consumed, and instead use DSP slices instead. In some cases, the overall number of DSPs used was unchanged, and all other primitives were eliminated from use.
 
@@ -323,7 +323,7 @@ The ability to encode features is a feature I thought was important to add becau
 
 *A screenshot of a Pandas DataFrame of benchmark output data*
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a28cecc8-6cbe-4cb2-bc3b-71829693742d/3844a037-05e5-48c8-8140-44c06360a70b/image.png)
+![image.png](assets/benchmark_pandas_df.png)
 
 ---
 
