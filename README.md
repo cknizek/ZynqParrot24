@@ -379,10 +379,10 @@ I am excited to continue contributing to Lakeroad, Churchroad, and ZynqParrot!
 
 ---
 
-**Sources**
+**Reources**
 
-[x] [ZYNQ-7000 Datasheet](https://www.mouser.com/datasheet/2/903/ds190_Zynq_7000_Overview-1595492.pdf)
+[1] [ZYNQ-7000 Datasheet](https://www.mouser.com/datasheet/2/903/ds190_Zynq_7000_Overview-1595492.pdf)
 
-[x] [Lakeroad paper](https://arxiv.org/abs/2401.16526)
+[2] [Lakeroad paper](https://arxiv.org/abs/2401.16526)
 
-[x] [UG901 Vivado Design Suite User Guide: Synthesis](https://docs.amd.com/v/u/2021.1-English/ug901-vivado-synthesis)
+[3] [UG901 Vivado Design Suite User Guide: Synthesis](https://docs.amd.com/v/u/2021.1-English/ug901-vivado-synthesis)
