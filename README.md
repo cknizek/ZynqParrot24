@@ -533,113 +533,113 @@ Notice that there was a single DSP that was instantiated. There were no LUTs. We
 (* template = "dsp" *)
 (* dynports =  1  *)
 (* top =  1  *)
-(* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:17.1-92.10" *)
+(* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:17.1-92.10" *)
 module out_module(a_i, b_i, c_i, clk_i, o);
   reg \$auto$verilog_backend.cc:2352:dump_module$7  = 0;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:67.17-68.57" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:67.17-68.57" *)
   reg [15:0] _0_;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:88.17-89.59" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:88.17-89.59" *)
   reg [8:0] _1_;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:0.0-0.0" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:0.0-0.0" *)
   reg [1:0] _2_;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:0.0-0.0" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:0.0-0.0" *)
   reg [1:0] _3_;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:0.0-0.0" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:0.0-0.0" *)
   reg [1:0] _4_;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:0.0-0.0" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:0.0-0.0" *)
   reg [1:0] _5_;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:72.32-72.47" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:72.32-72.47" *)
   wire [8:0] _6_;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:72.32-72.41" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:72.32-72.41" *)
   wire [8:0] _7_;
   (* data = 32'd1 *)
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:25.29-25.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:25.29-25.32" *)
   input [3:0] a_i;
   wire [3:0] a_i;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:42.26-42.29" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:42.26-42.29" *)
   wire [3:0] a_r;
   (* data = 32'd1 *)
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:28.29-28.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:28.29-28.32" *)
   input [3:0] b_i;
   wire [3:0] b_i;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:43.26-43.29" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:43.26-43.29" *)
   wire [3:0] b_r;
   (* data = 32'd1 *)
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:31.29-31.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:31.29-31.32" *)
   input [7:0] c_i;
   wire [7:0] c_i;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:44.26-44.29" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:44.26-44.29" *)
   wire [7:0] c_r;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:65.39-65.49" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:65.39-65.49" *)
   reg [15:0] \chained.genblk1[1].data_r_pre ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:86.37-86.48" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:86.37-86.48" *)
   reg [8:0] \chained_post.genblk1[1].data_r_post ;
   (* clk = 32'd1 *)
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:34.11-34.16" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:34.11-34.16" *)
   input clk_i;
   wire clk_i;
   (* out = 32'd1 *)
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:37.30-37.31" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:37.30-37.31" *)
   output [8:0] o;
   wire [8:0] o;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:72.26-72.29" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:72.26-72.29" *)
   wire [8:0] o_r;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
   reg [1:0] \post_data_delayed[0] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
   reg [1:0] \post_data_delayed[1] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
   wire [1:0] \post_data_delayed[2] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
   wire [1:0] \post_data_delayed[3] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
   wire [1:0] \post_data_delayed[4] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
   wire [1:0] \post_data_delayed[5] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
   wire [1:0] \post_data_delayed[6] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
   wire [1:0] \post_data_delayed[7] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:46.16-46.33" *)
   wire [1:0] \post_data_delayed[8] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   reg [1:0] \pre_data_delayed[0] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[10] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[11] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[12] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[13] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[14] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[15] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   reg [1:0] \pre_data_delayed[1] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[2] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[3] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[4] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[5] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[6] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[7] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[8] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:52.16-52.32" *)
   wire [1:0] \pre_data_delayed[9] ;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:51.28-51.38" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:51.28-51.38" *)
   wire [15:0] pre_data_i;
-  (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:50.28-50.38" *)
+  (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:50.28-50.38" *)
   wire [15:0] pre_data_o;
-  assign _6_ = _7_ + (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:72.32-72.47" *) c_r;
-  assign _7_ = a_r * (* src = "/Users/colinknizek/dev/lakeroad_bitbit/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:72.32-72.41" *) b_r;
+  assign _6_ = _7_ + (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:72.32-72.47" *) c_r;
+  assign _7_ = a_r * (* src = "/lakeroad/integration_tests/lakeroad/bsg_mul_add_unsigned/bsg_mul_add_unsigned_synth.sv:72.32-72.41" *) b_r;
   always @* begin
     if (\$auto$verilog_backend.cc:2352:dump_module$7 ) begin end
     _4_ = pre_data_i[1:0];
@@ -685,25 +685,16 @@ I became involved with Lakeroad as a result of the relationship between ZynqParr
 
 In this section, I’ll go over some of the pull requests I made to Lakeroad. In each description, I’ll detail the change and why it was made.
 
-I’ll start with my most recent PR to Lakeroad.
+The first PR I made to Lakeroad was: [Added unique log file for each yosys command](https://github.com/uwsampl/lakeroad/pull/446). This PR added supported for specifying the log filepath for Yosys, which was useful because it allows for debugging Yosys synthesis errors when synthesizing integration tests and files.
 
-`bitwuzla_commit_hash_update`: https://github.com/uwsampl/lakeroad/pull/461 
+The motivation behind [bitwuzla_commit_hash_update](https://github.com/uwsampl/lakeroad/pull/461)  was to update the version of Bitwuzla (an SMT2 solver used for Lakeroad’s counter-example guided synthesis, and kind of our favorite solver) to the most recent version. This is because the version of Bitwuzla previously used was over a year old, and the Bitwuzla team made some changes that fixed some other issues (related to stuff like integrating `bsg_mul_add_unsigned.sv` with Lakeroad segfaulting or hanging indefinitely. This was complicated by the fact that the most recent version of Bitwuzla breaks Lakeroad. That is, using the most recent version will result in Lakeroad failing to synthesize anything at all. It turns out that the Bitwuzla team made a fix, and we’re integrating it into Lakeroad. You can learn more about the issue here: [AigCnfEncoder::_encode Timeout](https://github.com/bitwuzla/bitwuzla/issues/122)
 
-The motivation behind this PR was to update the version of Bitwuzla (an SMT2 solver used for Lakeroad’s counter-example guided synthesis, and kind of our favorite solver) to the most recent version. This is because the version of Bitwuzla previously used was over a year old, and the Bitwuzla team made some changes that fixed some other issues (related to stuff like integrating `bsg_mul_add_unsigned.sv` with Lakeroad segfaulting or hanging indefinitely. This was complicated by the fact that the most recent version of Bitwuzla breaks Lakeroad. That is, using the most recent version will result in Lakeroad failing to synthesize anything at all. It turns out that the Bitwuzla team made a fix, and we’re integrating it into Lakeroad. You can learn more about the issue here: `AigCnfEncoder::_encode Timeout:` https://github.com/bitwuzla/bitwuzla/issues/122
+I made another PR to Lakeroad was meant to solve a similar issue as `bitwuzla_commit_hash_update`: Lakeroad would time out when trying to synthesize `bsg_mul_add_unsigned.sv` [verilator_testbench_specification](https://github.com/uwsampl/lakeroad/pull/459) In this PR, I added some code to Lakeroad’s integration with Verilator in `bin/simulate_with_verilator.py` such that the `testbench_module_name` and `top_module` for a file can be specified. This is useful because we noticed that certain files would time out less after this fix.
 
-The next PR focused on adding support for Rosette’s SMT output feature. This feature allows for the specification of a directory to output all SMT2 files produced by Lakeroad’s program synthesis. This is especially useful for debugging solvers (checking sat vs. unsat, whether a solver is timing out a certain file, or whether it’s segfaulting). `Enable Rosette SMT Output:` https://github.com/uwsampl/lakeroad/pull/460
+The PR [Enable Rosette SMT Output](https://github.com/uwsampl/lakeroad/pull/460) focused on adding support for Rosette’s SMT output feature. This feature allows for the specification of a directory to output all SMT2 files produced by Lakeroad’s program synthesis. This is especially useful for debugging solvers (checking sat vs. unsat, whether a solver is timing out a certain file, or whether it’s segfaulting). 
 
-Going back in time, I made another PR to Lakeroad was meant to solve a similar issue as `bitwuzla_commit_hash_update`: Lakeroad would time out when trying to synthesize `bsg_mul_add_unsigned.sv` 
+The only pending PR I have made to Lakeroad, as of the time of writing, is [bsg_mul_add_unsigned_dev](https://github.com/uwsampl/lakeroad/pull/454). This PR adds `bsg_mul_add_unsigned.sv` and the file’s dependencies to Lakeroad’s integration tests. This PR is still pending and hasn’t been merged yet, due to some remaining issues with synthesizing the designs using Lakeroad’s `yosys-plugin` and with Lakeroad in general.
 
-`verilator_testbench_specification`: https://github.com/uwsampl/lakeroad/pull/459
-
-In this PR, I added some code to Lakeroad’s integration with Verilator in `bin/simulate_with_verilator.py` such that the `testbench_module_name` and `top_module` for a file can be specified. This is useful because we noticed that certain files would time out less after this fix.
-
-The only pending PR I have made to Lakeroad, as of the time of writing, is `bsg_mul_add_unsigned_dev`. This PR adds `bsg_mul_add_unsigned.sv` and the file’s dependencies to Lakeroad’s integration tests. This PR is still pending and hasn’t been merged yet, due to some remaining issues with synthesizing the designs using Lakeroad’s `yosys-plugin` and with Lakeroad in general.
-
-`bsg_mul_add_unsigned_dev`: https://github.com/uwsampl/lakeroad/pull/454
-
-The first PR I made to Lakeroad was: `Added unique log file for each yosys command:` https://github.com/uwsampl/lakeroad/pull/446. This PR added supported for specifying the log filepath for Yosys, which was useful because it allows for debugging Yosys synthesis errors when synthesizing integration tests and files.
 
 ---
 
@@ -711,7 +702,7 @@ The first PR I made to Lakeroad was: `Added unique log file for each yosys comma
 
 This summer also included development related to Churchroad - the “next-gen” variant of Lakeroad. [Churchroad](https://github.com/uwsampl/churchroad) uses egglog and equality saturation. It generates an egraph of the design. The egraph is iterated upon with successive rewrites until an optimal mapping is achieved. 
 
-My contributions towards the Churchroad evaluation repo consisted of expanding the number of benchmarks available, adding the capability of custom Vivado synthesis flags, and adding the ability to encode features such as input/output bit-width to individual benchmarks. I added 4 MAC benchmarks, 25 multiply benchmarks, and 6 mul-add benchmarks. The benchmarks were permutated through pipeline stages, input bit-widths, and output bit-widths. This is important for the purposes of Churchroad’s benchmarking because it allows us to measure the primitive utilization (particularly of DSP slices) across various multiply patterns that pop up in different situations. You can view all of the new benchmarks in the pull request here: `New benchmarks + synthesis flags + encoded features for dataviz`: https://github.com/uwsampl/churchroad-evaluation/pull/2
+My contributions towards the Churchroad evaluation repo consisted of expanding the number of benchmarks available, adding the capability of custom Vivado synthesis flags, and adding the ability to encode features such as input/output bit-width to individual benchmarks. I added 4 MAC benchmarks, 25 multiply benchmarks, and 6 mul-add benchmarks. The benchmarks were permutated through pipeline stages, input bit-widths, and output bit-widths. This is important for the purposes of Churchroad’s benchmarking because it allows us to measure the primitive utilization (particularly of DSP slices) across various multiply patterns that pop up in different situations. You can view all of the new benchmarks in the pull request here: [New benchmarks + synthesis flags + encoded features for dataviz](https://github.com/uwsampl/churchroad-evaluation/pull/2)
 
 The addition of capability for custom Vivado synthesis flags was because Vivado allows for a significant amount of customization in terms of synthesis, based on specific flags included in the `.tcl` file. For example, some Vivado flags are listed in the screenshot below [2]:
 
