@@ -738,19 +738,19 @@ Another task that needs to be done is figuring out how to get Lakeroad to succes
 
 *Lakeroad*
 
-`bitwuzla_commit_hash_update`: https://github.com/uwsampl/lakeroad/pull/461 
+[bitwuzla_commit_hash_update](https://github.com/uwsampl/lakeroad/pull/461)
 
-`verilator_testbench_specification`: https://github.com/uwsampl/lakeroad/pull/459
+[verilator_testbench_specification](https://github.com/uwsampl/lakeroad/pull/459)
 
-`bsg_mul_add_unsigned_dev`: https://github.com/uwsampl/lakeroad/pull/454
+[bsg_mul_add_unsigned_dev](https://github.com/uwsampl/lakeroad/pull/454)
 
-`Enable Rosette SMT Output:` https://github.com/uwsampl/lakeroad/pull/460
+[Enable Rosette SMT Output](https://github.com/uwsampl/lakeroad/pull/460)
 
-`Added unique log file for each yosys command:` https://github.com/uwsampl/lakeroad/pull/446
+[Added unique log file for each yosys command](https://github.com/uwsampl/lakeroad/pull/446)
 
 *Churchroad*
 
-`New benchmarks + synthesis flags + encoded features for dataviz`: https://github.com/uwsampl/churchroad-evaluation/pull/2
+[New benchmarks + synthesis flags + encoded features for dataviz](https://github.com/uwsampl/churchroad-evaluation/pull/2)
 
 ---
 
@@ -758,23 +758,23 @@ Another task that needs to be done is figuring out how to get Lakeroad to succes
 
 *Bitwuzla* 
 
-`AigCnfEncoder::_encode Timeout:` https://github.com/bitwuzla/bitwuzla/issues/122
+[AigCnfEncoder::_encode Timeout](https://github.com/bitwuzla/bitwuzla/issues/122)
 
-`Timing out on SMT2 File:` https://github.com/bitwuzla/bitwuzla/issues/121
+[Timing out on SMT2 File](https://github.com/bitwuzla/bitwuzla/issues/121)
 
 *Churchroad*
 
-`2RW RAM Vivado Benchmark:` https://github.com/uwsampl/churchroad/issues/96
+[2RW RAM Vivado Benchmark](https://github.com/uwsampl/churchroad/issues/97)
 
-`Bitmask RAM Vivado Benchmark:` https://github.com/uwsampl/churchroad/issues/96
+[Bitmask RAM Vivado Benchmark](https://github.com/uwsampl/churchroad/issues/96)
 
-`Vivado Benchmarks:` https://github.com/uwsampl/churchroad/issues/90
+[Vivado Benchmarks](https://github.com/uwsampl/churchroad/issues/90)
 
 *Lakeroad*
 
-`yosys-plugin segfaults on multi-module designs:` https://github.com/uwsampl/lakeroad/issues/466
+[yosys-plugin segfaults on multi-module designs](https://github.com/uwsampl/lakeroad/issues/466)
 
-`Including bsg_dff_chain.sv into a Lakeroad integration test causes test failure:` https://github.com/uwsampl/lakeroad/issues/458
+[Including bsg_dff_chain.sv into a Lakeroad integration test causes test failure](https://github.com/uwsampl/lakeroad/issues/458)
 
 ---
 
