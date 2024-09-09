@@ -730,6 +730,8 @@ The Xilinx DSP48E1 slices are limited to 18x25-width inputs. This means that, if
 
 The next step for optimizing the DSP slice mappings for ZynqParrot is using Churchroad on `bsg_mul_add_unsigned.sv` and other potentially relevant BaseJump STL files, and placing the compiled output into ZynqParrot. This would require Churchroad because currently the bit-width limitations of the DSP48E1 slices are such that they cannot accept inputs larger than 18x25-bits, which is smaller than the bit-width used by the FMA pipe for ZynqParrot. 
 
+Another task that needs to be done is figuring out how to get Lakeroad to succesfully execute on files that have multiple instantiated modules. If you look at the example above, in order to get `bsg_mul_add_unsigned.sv` to actually synthesize I needed to re-write the file to directly implement the logic that's otherwise done in `bsg_dff.sv` and `bsg_dff_chain.sv`. I honestly am not too sure why Lakeroad fails at the moment on this type of file, but I have some guesses.
+
 ---
 
 **Pull Requests**
