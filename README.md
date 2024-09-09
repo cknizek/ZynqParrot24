@@ -75,7 +75,7 @@ Lakeroad takes a design, an architecture description, and a model of an FPGA pri
 
 ![Lakeroad components](https://github.com/cknizek/ZynqParrot24/blob/main/assets/lakeroad_components.png?raw=true)
 
-I’ll briefly note that what’s “optimal” can vary between design contexts. In the case of ZynqParrot, we are explicitly trying to reduce consumption of LUT primitives and increase consumption of DSP48E1 primitives. But this is not always the case. It could the reverse, or it could even be using Lakeroad to compile a more efficient mapping of BRAM18/36 slices from a design. 
+I’ll briefly note that what’s “optimal” can vary between design contexts. In the case of ZynqParrot, we are explicitly trying to reduce consumption of LUT primitives and increase consumption of DSP48E1 primitives. But this is not always the case. It could be the reverse, or it could even be using Lakeroad to compile a more efficient mapping of BRAM18/36 slices from a design. 
 
 One of the really interesting things about Lakeroad is that it can be extended to contexts beyond DSPs. For example, I spent a fair amount of time this summer exploring the usage of Lakeroad on BRAM slices. Interestingly, it may even be possible to extend Lakeroad beyond the context of FPGAs. My mentor Dan spoke about how we could possibly use Lakeroad on SKY130. This summer we used Lakeroad to more efficiently synthesize unsigned multiplication/addition from the BaseJump STL library onto the PYNQ Z2 FPGA. 
 
@@ -101,11 +101,11 @@ The segment of the ZynqParrot codebase that we are interested in applying Lakero
 
 ***How do we use Lakeroad for ZynqParrot?***
 
-BaseJump STL has two versions of `bsg_mul_add_unsigned.sv` . One is hardened, and one is not. We can select [the hardened version](https://github.com/bespoke-silicon-group/basejump_stl/blob/0b8ca3b19d3ae27c5e6f6d4335ca6d792bf1f45e/hard/ultrascale_plus/bsg_misc/bsg_mul_add_unsigned.sv#L12) because we will be mapping `bsg_mul_add_unsigned.sv` to the Zynq 7020 FPGA. The next step we will take is to specify the bit widths. In our case, let’s do a 13x13 multiplication. We will have to remove all segments of the file that are not synthesizable by Lakeroad, which means the lines beginning with `//` will be removed, along with expressions like the `initial assert...` statement. However, new lines beginning with `//` will be added to the top of the file because this allows us to use the Lit testing framework to run this file as an integration test. 
+BaseJump STL has two versions of `bsg_mul_add_unsigned.sv` . One is hardened, and one is not. We can select [the hardened version](https://github.com/bespoke-silicon-group/basejump_stl/blob/0b8ca3b19d3ae27c5e6f6d4335ca6d792bf1f45e/hard/ultrascale_plus/bsg_misc/bsg_mul_add_unsigned.sv#L12) because we will be mapping `bsg_mul_add_unsigned.sv` to the Zynq 7020 FPGA. The next step we will take is to specify the bit widths. In our case, let’s do a 13x13 multiplication. We will have to remove all segments of the file that are not synthesizable by Lakeroad, which means the lines beginning with `//` will be removed, along with expressions like the `initial assert...` statement. However, new lines beginning with `//` will be added to the top of the file because this allows us to use the Lit testing framework to run this file as an integration test.
 
 I will walk through the modifications required because I hope it will be useful in case you decide to use Lakeroad on your own.
 
-We will begin with our top-level module: `bsg_mul_add_unsigned.sv`. I have strike-throughed all segments of the code that should be removed, and included nearby the lines that should either be modified or added to the file in order to successfully synthesize with Lakeroad.
+We will begin with our top-level module: `bsg_mul_add_unsigned.sv`. I have striked-through all segments of the code that can be removed, and included nearby the lines that can either be modified or added to the file in order to successfully synthesize with Lakeroad.
 
 `bsg_mul_add_unsigned.sv` will look like the following:
 
