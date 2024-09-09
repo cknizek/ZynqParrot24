@@ -1,6 +1,8 @@
-### GSoC Final Report
+### ZynqParrot24 Final Report
 
-**Intro**
+**ZynqParrot Intro**
+
+ZynqParrot is a version of [BlackParrot](https://github.com/black-parrot/black-parrot) (an open-source, Linux-capable, cache-coherent, RV64GC multicore) that’s designed to be able to fit on the [PYNQ Z2](http://www.pynq.io/) educational FPGA development board released by Xilinx. One of the challenges with ZynqParrot is dealing with the constrained hardware resources of the XCZ-7020 FPGA located on the PYNQ Z2. 
 
 The goal for ZynqParrot this summer was to fit two BlackParrot cores onto the PYNQ Z2 educational FPGA development board. This is constrained by resources; the programmable logic (PL) of the ZYNQ-7000 SoC in the PYNQ Z2 only contains a finite number of hardware primitives such as LUTs, flip-flops, BRAMs, and DSP slices. Fitting two BlackParrot cores requires carefully re-mapping hardware primitives such that the design can fit onto the board without going over the maximum number of primitives. ZynqParrot is constrained by LUTs in this context. At the beginning of this summer, we set out to divert the usage of LUTs to another under-utilized resource on the Z2: DSP48E1 slices. Using Lakeroad, we can apply program synthesis to more efficiently map the DSP48E1 slices being used on the FPGA.
 
