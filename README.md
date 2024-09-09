@@ -10,7 +10,7 @@ The goal for ZynqParrot this summer was to fit two BlackParrot cores onto the PY
 
 **What are DSP48E1 slices?**
 
-DSP48E1 slices are hardened programmable logic elements that are contained with certain Xilinx FPGAs. [You can see Xilinx’s Unisim library component for the DSP48E1 here.](https://github.com/Xilinx/XilinxUnisimLibrary/blob/master/verilog/src/unisims/DSP48E1.v) It’s about 2000 lines of Verilog, but provides a little more context of what’s going on under the hood. Here is a quick diagram of what kinds of inputs and outputs the DSP slice provides.\
+DSP48E1 slices are hardened programmable logic elements that are contained with certain Xilinx FPGAs. [You can see Xilinx’s Unisim library component for the DSP48E1 here.](https://github.com/Xilinx/XilinxUnisimLibrary/blob/master/verilog/src/unisims/DSP48E1.v) It’s about 2000 lines of Verilog, but provides a little more context of what’s going on under the hood. Here is a quick diagram of what kinds of inputs and outputs the DSP slice provides.
 
 ![DSP48E1 Slice Functionality](https://github.com/cknizek/ZynqParrot24/blob/main/assets/basic-dsp48-slice-functionality.png?raw=true)
 
