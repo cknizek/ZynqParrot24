@@ -10,7 +10,7 @@ The goal for ZynqParrot this summer was to fit two BlackParrot cores onto the PY
 
 DSP48E1 slices are hardened programmable logic elements that are contained with certain Xilinx FPGAs. [You can see Xilinx’s Unisim library component for the DSP48E1 here.](https://github.com/Xilinx/XilinxUnisimLibrary/blob/master/verilog/src/unisims/DSP48E1.v) It’s about 2000 lines of Verilog, but provides a little more context of what’s going on under the hood. Here is a quick diagram of what kinds of inputs and outputs the DSP slice provides.\
 
-!https://github.com/cknizek/ZynqParrot24/blob/main/assets/basic-dsp48-slice-functionality.png?raw=true
+![DSP48E1 Slice Functionality](https://github.com/cknizek/ZynqParrot24/blob/main/assets/basic-dsp48-slice-functionality.png?raw=true)
 
 Configuring the DSP48E1 slices manually is a bit complex. [The documentation from Xilinx itself is 58 pages.](https://docs.amd.com/v/u/en-US/ug479_7Series_DSP48E1) There are a wide array of inputs that can be configured, and they can be used to efficiently perform multiplication and multiply-accumulate operations common to many DSP applications. We’re interested in the DSP48E1 slices because it provides a way to off-load some of the hardware resources of ZynqParrot that are used by the FMA pipeline. In particular, we want to replace specific multiply-add segments of the design such that they use DSP slices, and not LUTs.
 
@@ -61,17 +61,17 @@ Report Cell Usage:
 
 Here is the same data visualized into a bar chart.
 
-!https://github.com/cknizek/ZynqParrot24/blob/main/assets/fpga_primitive_visualization.png?raw=true
+![FPGA Primitive Visualization](https://github.com/cknizek/ZynqParrot24/blob/main/assets/fpga_primitive_visualization.png?raw=true)
 
 We see that only 11 `DSP48E1` slices are being used when synthesizing ZynqParrot. We can see in the table below that there are 220 `DSP48E1` slices on the PYNQ Z2’s XCZ7020.
 
-!https://github.com/cknizek/ZynqParrot24/blob/main/assets/xcz-7020-datasheet.png?raw=true
+![XCZ-7020 Datasheet](https://github.com/cknizek/ZynqParrot24/blob/main/assets/xcz-7020-datasheet.png?raw=true)
 
 This implies that there is significant opportunity in terms of utilization. And using Lakeroad, we can exploit this opportunity.
 
 Lakeroad takes a design, an architecture description, and a model of an FPGA primitive (such as a DSP48E1). Then, Lakeroad uses program synthesis to compile the design to Verilog after generating a sketch and semantically analyzing the file. This compiled Verilog file can be the optimal mapping for the design. 
 
-!https://github.com/cknizek/ZynqParrot24/blob/main/assets/lakeroad_components.png?raw=true
+![Lakeroad components](https://github.com/cknizek/ZynqParrot24/blob/main/assets/lakeroad_components.png?raw=true)
 
 I’ll briefly note that what’s “optimal” can vary between design contexts. In the case of ZynqParrot, we are explicitly trying to reduce consumption of LUT primitives and increase consumption of DSP48E1 primitives. But this is not always the case. It could the reverse, or it could even be using Lakeroad to compile a more efficient mapping of BRAM18/36 slices from a design. 
 
@@ -706,7 +706,7 @@ My contributions towards the Churchroad evaluation repo consisted of expanding t
 
 The addition of capability for custom Vivado synthesis flags was because Vivado allows for a significant amount of customization in terms of synthesis, based on specific flags included in the `.tcl` file. For example, some Vivado flags are listed in the screenshot below [2]:
 
-!https://github.com/cknizek/ZynqParrot24/blob/main/assets/vivado_synthesis_flags.png?raw=true
+![Vivado synthesis flags](https://github.com/cknizek/ZynqParrot24/blob/main/assets/vivado_synthesis_flags.png?raw=true)
 
 When using the `synth_design` command, these flags can be included with the command in order to change the behavior during synthesis. In the case of our Churchroad evaluation, we discovered that certain flags (such as setting `cascade_dsp force` ) would drastically reduce the number of LUT and carry primitives being consumed, and instead use DSP slices instead. In some cases, the overall number of DSPs used was unchanged, and all other primitives were eliminated from use.
 
@@ -714,7 +714,7 @@ The ability to encode features is a feature I thought was important to add becau
 
 *A screenshot of a Pandas DataFrame of benchmark output data*
 
-!https://github.com/cknizek/ZynqParrot24/blob/main/assets/benchmark_pandas_df.png?raw=true
+![Pandas DataFrame](https://github.com/cknizek/ZynqParrot24/blob/main/assets/benchmark_pandas_df.png?raw=true)
 
 ---
 
