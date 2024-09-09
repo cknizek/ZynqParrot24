@@ -31,13 +31,13 @@ Report Cell Usage:
 |2     |BUFG         |     4|
 |3     |BUFGMUX_CTRL |     3|
 |4     |CARRY4       |  1089|
-**|5     |DSP48E1      |    11|**
-**|7     |LUT1         |   533|
+|5     |DSP48E1      |    11|
+|7     |LUT1         |   533|
 |8     |LUT2         |  2815|
 |9     |LUT3         |  6618|
 |10    |LUT4         |  5627|
 |11    |LUT5         |  8237|
-|12    |LUT6         | 20330|**
+|12    |LUT6         | 20330|
 |13    |MMCME2_ADV   |     1|
 |14    |MUXF7        |   395|
 |15    |MUXF8        |     4|
