@@ -384,9 +384,16 @@ module in_module #(
 endmodule
 ```
 
-We’ll launch the Lakeroad plugin for Yosys by running the command `yosys -m [lakeroad.so](http://lakeroad.so)` from the `lakeroad/yosys-plugin` directory. 
+We’ll launch the Lakeroad plugin for Yosys by running the command `yosys -m lakeroad.so` from the `lakeroad/yosys-plugin` directory. 
 
 Then, we run the command `read_verilog /path/to/bsg_mul_add_unsigned.sv` once the Yosys plugin has been launched. The top-level module is `in_module` , so we’ll set that in the hierarchy with the command `hierarchy -top in_module` . Next, we’ll run the command `lakeroad in_module` . Then, we’ll run `rename in_module out_module`. Finally, we’ll run `write_verilog /path/to/bsg_mul_add_unsigned_compiled.v` . The last command will write the compiled output of Lakeroad to the filepath of your choice. 
+
+In summary, we run the commands:
+1. `yosys -m lakeroad.so`
+2. `read_verilog /path/to/bsg_mul_add_unsigned.sv`
+3. `hierarchy -top in_module`
+4. `lakeroad in_module`
+5. `write_verilog /path/to/bsg_mul_add_unsigned_compiled.v`
 
 As an example of what the compiled output look like, the file above is synthesized by Lakeroad as the following:
 
